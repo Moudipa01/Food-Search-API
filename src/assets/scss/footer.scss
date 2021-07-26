@@ -1,0 +1,37 @@
+footer {
+  background-color: $bg-dark-transparent;
+  text-align: center;
+  font-family: $font;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    margin: 0 0 0 8px;
+    text-decoration: none;
+    color: $secondary-color;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+
+  div#edaman-badge {
+    margin-top: 5px;
+  }
+
+  @media (max-width: $max-width-mobile-xs) {
+    a {
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+@media (max-width: $max-width-mobile-xs) {
+  footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

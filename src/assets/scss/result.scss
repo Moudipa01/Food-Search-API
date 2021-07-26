@@ -1,0 +1,18 @@
+#result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  font-family: $font;
+}
+
+@media (max-width: $max-width-lg) {
+  #result {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $max-width-mobile-sm) {
+  #result {
+    grid-template-columns: 1fr;
+  }
+}
